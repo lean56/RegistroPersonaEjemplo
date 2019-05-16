@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using RegistroEjemplo1.UI.Registro;
 
 namespace RegistroEjemplo1
 {
@@ -15,6 +16,12 @@ namespace RegistroEjemplo1
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void personasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           RegistroPersona rg = new RegistroPersona();
+           rg.Show();
         }
     }
 }
